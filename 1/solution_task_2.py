@@ -11,11 +11,15 @@ transformations = {
     # no zero in assignment
 }
 
-"""
-Find numbers on the start or end of string.
-Default option is to search from the start. If searching from the end, reverse is applied. 
-"""
+
 def find_numbers(line: str, start: bool = True) -> str:
+    """
+    Find numbers on the start or end of string.
+    Default option is to search from the start. If searching from the end, reverse is applied.
+    :param line: line from input
+    :param start: option is to search from the start or end of the string denoted by bool
+    :return:
+    """
     temp = ""
     if not start:
         # searching from the end, reverse line
